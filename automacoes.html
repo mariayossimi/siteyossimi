@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como funcionam as automações | Yossimi Solutions</title>
+<meta name="description" content="Veja como funcionam, na prática, as automações de WhatsApp que a Yossimi Solutions cria: reservas direto do WhatsApp e cobranças automáticas.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Como funcionam as automações | Yossimi Solutions">
+<meta property="og:description" content="Reservas direto do WhatsApp e cobranças automáticas, explicadas passo a passo.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="canonical" href="https://yossimisolutions.com.br/automacoes.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="header__inner container">
+    <a href="index.html" class="brand" aria-label="Yossimi Solutions - início">
+      <img src="assets/logo-simbolo.png" alt="Símbolo Yossimi Solutions" class="brand__icon" width="34" height="34">
+      <span class="brand__name">Yossimi Solutions</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="index.html">&larr; Voltar ao site</a>
+    </nav>
+
+    <a
+      class="btn btn--pill header__cta"
+      href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes"
+      target="_blank" rel="noopener"
+    >Fale comigo</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Intro -->
+<section class="auto-hero">
+  <div class="container auto-hero__inner">
+    <span class="badge reveal-fade">Automações Yossimi</span>
+    <h1 class="auto-hero__title reveal-fade">Como funcionam as automações</h1>
+    <p class="auto-hero__subtitle reveal-fade">Dois exemplos reais, explicados passo a passo — sem falar de código.</p>
+  </div>
+</section>
+
+<!-- Visão geral -->
+<section class="auto-overview">
+  <div class="container">
+    <div class="auto-overview__grid">
+      <article class="bento-card reveal-up">
+        <div class="auto-overview__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H9l-4 4V5z"/></svg>
+        </div>
+        <p class="auto-overview__label">Automação 1</p>
+        <h3>Reservas direto do WhatsApp</h3>
+        <p>Mensagem no grupo vira reserva confirmada no sistema, sem digitar a mesma coisa duas vezes.</p>
+      </article>
+
+      <article class="bento-card reveal-up">
+        <div class="auto-overview__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/></svg>
+        </div>
+        <p class="auto-overview__label">Automação 2</p>
+        <h3>Cobranças automáticas</h3>
+        <p>Fatura gerada e lembrete enviado sozinho, todo santo dia — sem ninguém de olho na planilha.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Automação 1: título -->
+<section class="auto-divider" id="automacao-1">
+  <div class="container auto-divider__inner">
+    <p class="auto-divider__label reveal-fade">Automação 1</p>
+    <h2 class="reveal-fade">Reservas direto do WhatsApp</h2>
+    <p class="reveal-fade">Como uma mensagem no grupo vira reserva confirmada no sistema — sem ninguém digitar nada duas vezes.</p>
+  </div>
+</section>
+
+<!-- Automação 1: fluxo -->
+<section class="auto-flow-section">
+  <div class="container">
+    <h2 class="section-title reveal-fade">O caminho da mensagem até a reserva confirmada</h2>
+    <div class="mini-flow mini-flow--big reveal-up">
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H9l-4 4V5z"/></svg>
+        <span>Cliente manda mensagem no grupo do WhatsApp</span>
+      </div>
+      <span class="mini-flow__arrow">&#8594;</span>
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+        <span>A automação identifica os dados da reserva</span>
+      </div>
+      <span class="mini-flow__arrow">&#8594;</span>
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        <span>A reserva aparece confirmada no sistema</span>
+      </div>
+    </div>
+    <p class="auto-highlight reveal-fade">Ninguém digita a mesma informação duas vezes.</p>
+  </div>
+</section>
+
+<!-- Automação 2: título -->
+<section class="auto-divider" id="automacao-2">
+  <div class="container auto-divider__inner">
+    <p class="auto-divider__label reveal-fade">Automação 2</p>
+    <h2 class="reveal-fade">Cobranças automáticas por WhatsApp</h2>
+    <p class="reveal-fade">Todo dia de manhã, o sistema gera as faturas do mês e avisa sozinho quem está perto de vencer ou já venceu.</p>
+  </div>
+</section>
+
+<!-- Automação 2: linha do tempo -->
+<section class="auto-flow-section">
+  <div class="container">
+    <h2 class="section-title reveal-fade">No máximo duas mensagens por fatura</h2>
+    <div class="timeline reveal-up">
+      <div class="timeline__step">
+        <p class="timeline__tag">2 dias antes de vencer</p>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4M16 3v4"/></svg>
+        <h3>Aviso lembrando do valor e do vencimento</h3>
+      </div>
+      <span class="timeline__line"></span>
+      <div class="timeline__step timeline__step--dark">
+        <p class="timeline__tag">No dia</p>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+        <h3>Vencimento da fatura</h3>
+      </div>
+      <span class="timeline__line"></span>
+      <div class="timeline__step">
+        <p class="timeline__tag">1 dia depois, se não pagou</p>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H9l-4 4V5z"/></svg>
+        <h3>Um único lembrete de atraso</h3>
+      </div>
+    </div>
+    <p class="auto-highlight reveal-fade">Depois disso a automação nunca mais repete — pra não incomodar o cliente.</p>
+  </div>
+</section>
+
+<!-- Automação 2: o que vai na mensagem -->
+<section class="automations">
+  <div class="container automations__inner auto-message__inner">
+    <div class="auto-message__text">
+      <p class="auto-overview__label reveal-fade">O que vai na mensagem</p>
+      <h2 class="reveal-fade">Tudo que a pessoa precisa pra pagar, numa mensagem só</h2>
+      <ul class="auto-message__list reveal-fade">
+        <li>Nome da pessoa e mês de referência</li>
+        <li>Valor exato e data de vencimento</li>
+        <li>Chave Pix pra pagar direto — sem link, sem taxa</li>
+        <li>Pedido de comprovante, na mesma conversa</li>
+      </ul>
+    </div>
+
+    <div class="phone phone--automation reveal-up">
+      <div class="phone__notch"></div>
+      <div class="phone__screen phone__screen--chat">
+        <div class="chat-bubble chat-bubble--out">Oi, Marcos! Sua mensalidade de setembro vence dia 30/09, no valor de R$ 220,00.</div>
+        <div class="chat-bubble chat-bubble--out">Chave Pix: [CNPJ do estacionamento]</div>
+        <div class="chat-bubble chat-bubble--out">Assim que pagar, manda o comprovante aqui mesmo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Automação 2: confirmação -->
+<section class="auto-flow-section">
+  <div class="container">
+    <h2 class="section-title reveal-fade">A confirmação de pagamento é sempre humana</h2>
+    <div class="mini-flow mini-flow--big reveal-up">
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+        <span>Cliente paga e manda o comprovante na conversa</span>
+      </div>
+      <span class="mini-flow__arrow">&#8594;</span>
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
+        <span>O gerente confere o comprovante ou o extrato</span>
+      </div>
+      <span class="mini-flow__arrow">&#8594;</span>
+      <div class="mini-flow__step">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        <span>Marca a fatura como paga, com data e valor</span>
+      </div>
+    </div>
+    <p class="auto-note reveal-fade">Não existe gateway de pagamento automático — a palavra final é sempre de quem confere. Dá pra registrar até quando alguém paga dois meses juntos.</p>
+  </div>
+</section>
+
+<!-- Automação 2: segurança e acompanhamento -->
+<section class="auto-divider auto-monitor">
+  <div class="container auto-monitor__inner">
+    <div class="auto-monitor__col reveal-fade">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="auto-monitor__icon"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <h3>Um interruptor liga ou desliga tudo</h3>
+      <p>Se for preciso pausar os envios — automáticos ou manuais — é só desligar essa chave. Sem mexer em nada técnico. Hoje ela está ligada.</p>
+    </div>
+    <div class="auto-monitor__col reveal-fade">
+      <p class="auto-overview__label">Onde acompanhar</p>
+      <div class="auto-monitor__item">
+        <h4>Aba Cobranças</h4>
+        <p>Histórico de tudo que foi enviado, por mês</p>
+      </div>
+      <div class="auto-monitor__item">
+        <h4>Aba Vencidos / Hoje</h4>
+        <p>O que precisa de atenção agora</p>
+      </div>
+      <div class="auto-monitor__item">
+        <h4>Aba Visão Geral</h4>
+        <p>Quantas cobranças, quanto foi recebido</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="auto-cta">
+  <div class="container auto-cta__inner reveal-up">
+    <h2>Quer uma automação assim no seu negócio?</h2>
+    <a
+      class="btn btn--pill btn--dark"
+      href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20automacoes"
+      target="_blank" rel="noopener"
+    >Falar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="footer">
+  <svg class="footer__ribbon" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="ribbonGradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#3FB8C9"/>
+        <stop offset="1" stop-color="#8A5BC4"/>
+      </linearGradient>
+    </defs>
+    <path id="ribbonPath" d="M -100 180 C 200 40, 400 260, 650 140 S 1100 40, 1300 160" fill="none" stroke="url(#ribbonGradient)" stroke-width="70" stroke-linecap="round"/>
+  </svg>
+
+  <div class="container footer__inner">
+    <div class="footer__grid">
+      <div class="footer-card footer-card--cta reveal-up">
+        <img src="assets/logo-horizontal.png" alt="Yossimi Solutions" class="footer__logo" loading="lazy" width="200" height="112">
+        <h3>Vamos conversar?</h3>
+        <a class="btn btn--pill" href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+
+      <div class="footer-card reveal-up">
+        <h3>Contato</h3>
+        <a href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/yossimi.solutions" target="_blank" rel="noopener">@yossimi.solutions</a>
+        <span>Atendimento para todo o Brasil</span>
+      </div>
+
+      <div class="footer-card footer-card--icons reveal-up">
+        <a href="https://instagram.com/yossimi.solutions" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer__copy">&copy; <span id="year"></span> Yossimi Solutions · Tecnologia que trabalha pelo seu negócio.</p>
+  </div>
+</footer>
+
+<!-- Botão flutuante de WhatsApp -->
+<a class="whatsapp-float" id="whatsappFloat" href="https://api.whatsapp.com/send?phone=5516997734222&text=Oi,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1s-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-1.9-1.2 7.1 7.1 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.4c.1-.1.1-.2.2-.4a.4.4 0 0 0 0-.4c-.1-.1-.5-1.2-.7-1.7s-.4-.4-.5-.4h-.4a.9.9 0 0 0-.6.3 2.6 2.6 0 0 0-.8 1.9 4.6 4.6 0 0 0 1 2.4 10.4 10.4 0 0 0 4 3.5c.5.2.9.4 1.3.5a3.2 3.2 0 0 0 1.4.1 2.4 2.4 0 0 0 1.5-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.2z"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
