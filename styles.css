@@ -1315,7 +1315,21 @@ button:focus-visible {
   text-align: center;
 }
 
-.footer__logo { width: 160px; height: auto; margin-bottom: var(--space-2); }
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: var(--space-2);
+}
+
+.footer__logo-icon { width: 56px; height: 56px; }
+
+.footer__logo-text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--text-on-dark);
+}
 
 .footer__heading { font-size: 1.4rem; margin: 0 0 var(--space-2); }
 
