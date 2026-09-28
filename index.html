@@ -3,18 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yossimi Solutions | Sites e automações para negócios locais</title>
-<meta name="description" content="Sites, otimização do Perfil de Empresa no Google e automações de WhatsApp para negócios locais em todo o Brasil. Tecnologia que trabalha pelo seu negócio.">
+<title>Criação de Sites, Google e Automação de WhatsApp | Yossimi Solutions</title>
+<meta name="description" content="Crio sites profissionais, otimizo seu Perfil de Empresa no Google e automatizo agendamentos, lembretes e cobranças no WhatsApp. Para clínicas, salões, restaurantes e prestadores de serviço em todo o Brasil.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Maria Eduarda (Duda) – Yossimi Solutions">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Yossimi Solutions | Tecnologia que trabalha pelo seu negócio">
-<meta property="og:description" content="Sites, Google e automações de WhatsApp para negócios locais em todo o Brasil.">
-<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:site_name" content="Yossimi Solutions">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://siteyossimi.vercel.app/">
+<meta property="og:title" content="Yossimi Solutions | Tecnologia que trabalha pelo seu negócio">
+<meta property="og:description" content="Site profissional, seu negócio no Google e automações de WhatsApp. Seja encontrado e pare de perder tempo com tarefa repetitiva.">
+<meta property="og:image" content="https://siteyossimi.vercel.app/assets/og-image.jpg">
+<meta property="og:image:alt" content="Yossimi Solutions – sites, Google e automações">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yossimi Solutions | Tecnologia que trabalha pelo seu negócio">
+<meta name="twitter:description" content="Site profissional, seu negócio no Google e automações de WhatsApp.">
+<meta name="twitter:image" content="https://siteyossimi.vercel.app/assets/og-image.jpg">
 
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="canonical" href="https://yossimisolutions.com.br/">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="canonical" href="https://siteyossimi.vercel.app/">
+<link rel="alternate" hreflang="pt-BR" href="https://siteyossimi.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://siteyossimi.vercel.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://siteyossimi.vercel.app/">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,16 +41,96 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Yossimi Solutions",
-  "description": "Sites, otimização do Perfil de Empresa no Google e automações de WhatsApp para negócios locais.",
-  "areaServed": "BR",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "BR"
-  },
-  "telephone": "+5516997734222",
-  "sameAs": ["https://instagram.com/yossimi.solutions"]
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://siteyossimi.vercel.app/#empresa",
+      "name": "Yossimi Solutions",
+      "url": "https://siteyossimi.vercel.app/",
+      "logo": "https://siteyossimi.vercel.app/assets/logo-simbolo.png",
+      "image": "https://siteyossimi.vercel.app/assets/og-image.jpg",
+      "description": "Criação de sites profissionais, otimização do Perfil de Empresa no Google e automações de WhatsApp para negócios locais.",
+      "telephone": "+55-16-99773-4222",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "founder": {
+        "@id": "https://siteyossimi.vercel.app/#duda"
+      },
+      "knowsLanguage": [
+        "pt-BR",
+        "en"
+      ],
+      "sameAs": [
+        "https://instagram.com/yossimi.solutions"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pacotes",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Criação de site profissional",
+              "description": "Site sob medida, rápido no celular, com botão de WhatsApp."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Otimização do Perfil de Empresa no Google",
+              "description": "Configuração e otimização do perfil para aparecer nas buscas locais e no Google Maps."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automação de WhatsApp",
+              "description": "Agendamentos, lembretes, cobranças e painel de gestão automatizados."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google + Site + Automação",
+              "description": "Pacote completo com acompanhamento personalizado."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://siteyossimi.vercel.app/#duda",
+      "name": "Maria Eduarda",
+      "alternateName": "Duda",
+      "jobTitle": "Desenvolvedora web e fundadora",
+      "worksFor": {
+        "@id": "https://siteyossimi.vercel.app/#empresa"
+      },
+      "image": "https://siteyossimi.vercel.app/assets/duda.jpg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://siteyossimi.vercel.app/#site",
+      "url": "https://siteyossimi.vercel.app/",
+      "name": "Yossimi Solutions",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://siteyossimi.vercel.app/#empresa"
+      }
+    }
+  ]
 }
 </script>
 </head>
