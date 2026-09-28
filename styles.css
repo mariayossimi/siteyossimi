@@ -75,7 +75,6 @@ h1, h2, h3 { font-family: var(--font-display); }
 .bento-card,
 .package-card,
 .testimonial-card,
-.footer-card,
 .pill,
 .timeline__step,
 .mini-flow--big .mini-flow__step {
@@ -650,8 +649,8 @@ button:focus-visible {
 .bento-card h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
 .bento-card p { color: var(--text-muted); font-size: 0.95rem; }
 
-.bento-card__counter-text { color: #fff; font-size: 1.1rem; }
-.bento-card__counter-text strong { font-size: 1.4em; }
+.bento-card--contador .bento-card__counter-text { color: #fff; font-size: 1.1rem; }
+.bento-card__counter-text strong { font-size: 1.4em; font-weight: 800; color: #fff; }
 
 .mini-flow {
   display: flex;
@@ -1307,44 +1306,44 @@ button:focus-visible {
   opacity: 0.5;
 }
 
-.footer__inner { position: relative; z-index: 1; }
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.6fr);
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
-}
-
-.footer-card {
-  background: #fff;
-  color: var(--text);
-  border-radius: var(--radius-lg);
-  padding: var(--space-3);
+.footer__inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  align-items: center;
+  text-align: center;
 }
 
-.footer-card h3 { font-size: 1.2rem; }
-.footer-card a { color: var(--text-muted); transition: color 0.2s ease; }
-.footer-card a:hover { color: var(--purple); }
-.footer-card span { color: var(--text-muted); font-size: 0.9rem; }
+.footer__logo { width: 160px; height: auto; margin-bottom: var(--space-2); }
 
-.footer-card--cta { align-items: flex-start; }
-.footer__logo { width: 140px; height: auto; margin-bottom: 0.4rem; }
+.footer__heading { font-size: 1.4rem; margin: 0 0 var(--space-2); }
 
-.footer-card--icons { flex-direction: row; align-items: center; justify-content: center; gap: var(--space-3); }
-.footer-card--icons svg { width: 24px; height: 24px; color: var(--purple); }
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-3) 0 var(--space-4);
+  color: var(--text-on-dark-muted);
+  font-size: 0.9rem;
+}
+
+.footer__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-on-dark-muted);
+  transition: color 0.2s ease;
+}
+.footer__links a:hover { color: var(--teal); }
+.footer__links a svg { width: 16px; height: 16px; flex-shrink: 0; }
 
 .footer__copy {
   text-align: center;
   color: var(--text-on-dark-muted);
   font-size: 0.85rem;
-}
-
-@media (max-width: 860px) {
-  .footer__grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* ===== Botão flutuante WhatsApp ===== */
