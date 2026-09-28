@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siteyossimi.vercel.app/sitemap.xml
