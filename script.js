@@ -29,7 +29,10 @@ if (hasGSAP) {
   gsap.registerPlugin(ScrollTrigger);
 
   // ===== Lenis smooth scroll, synced with ScrollTrigger =====
-  if (!reduceMotion && typeof window.Lenis !== 'undefined') {
+  // Skipped on touch/small screens: fights with mobile Safari's dynamic
+  // toolbar and causes a ghosting/duplicate-frame artifact while scrolling.
+  const isTouchOrSmall = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 900;
+  if (!reduceMotion && !isTouchOrSmall && typeof window.Lenis !== 'undefined') {
     const lenis = new Lenis();
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add((time) => lenis.raf(time * 1000));
@@ -209,8 +212,31 @@ if (hasGSAP) {
   const pills = gsap.utils.toArray('.pill');
 
   if (autoPhone) {
+    const floatPills = () => {
+      pills.forEach((el, i) => {
+        const dir = i % 2 === 0 ? 1 : -1;
+        gsap.to(el, {
+          y: `+=${10 + (i % 3) * 4}`,
+          x: `+=${dir * (6 + (i % 2) * 4)}`,
+          rotation: dir * (2 + (i % 3)),
+          duration: 2.2 + (i % 3) * 0.3,
+          ease: 'sine.inOut',
+          repeat: -1,
+          yoyo: true,
+          delay: 0.6 + i * 0.1,
+        });
+      });
+    };
+
     if (reduceMotion) {
       gsap.set(pills, { opacity: 1, scale: 1 });
+    } else if (window.innerWidth <= 700) {
+      // Mobile: show immediately instead of relying on a scroll-triggered
+      // fade-in (which could get stuck at opacity:0 if the trigger's math
+      // is thrown off by dynamic mobile viewport height), but keep the
+      // floating idle motion so the pills read the same as on desktop.
+      gsap.set(pills, { opacity: 1, scale: 1 });
+      floatPills();
     } else {
       gsap.set(pills, { opacity: 0, scale: 0.8 });
       ScrollTrigger.create({
@@ -219,19 +245,7 @@ if (hasGSAP) {
         once: true,
         onEnter: () => {
           gsap.to(pills, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.6)', stagger: 0.12 });
-          pills.forEach((el, i) => {
-            const dir = i % 2 === 0 ? 1 : -1;
-            gsap.to(el, {
-              y: `+=${10 + (i % 3) * 4}`,
-              x: `+=${dir * (6 + (i % 2) * 4)}`,
-              rotation: dir * (2 + (i % 3)),
-              duration: 2.2 + (i % 3) * 0.3,
-              ease: 'sine.inOut',
-              repeat: -1,
-              yoyo: true,
-              delay: 0.6 + i * 0.1,
-            });
-          });
+          floatPills();
         },
       });
     }
