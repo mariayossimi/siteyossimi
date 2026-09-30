@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://siteyossimi.vercel.app/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://siteyossimi.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://siteyossimi.vercel.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://siteyossimi.vercel.app/"/>
+    <loc>https://yossimisolutions.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/"/>
     <lastmod>2026-09-28</lastmod>
   </url>
   <url>
-    <loc>https://siteyossimi.vercel.app/en/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://siteyossimi.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://siteyossimi.vercel.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://siteyossimi.vercel.app/"/>
+    <loc>https://yossimisolutions.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/"/>
     <lastmod>2026-09-28</lastmod>
   </url>
   <url>
-    <loc>https://siteyossimi.vercel.app/automacoes.html</loc>
+    <loc>https://yossimisolutions.vercel.app/automacoes.html</loc>
     <lastmod>2026-09-28</lastmod>
   </url>
   <url>
-    <loc>https://siteyossimi.vercel.app/automacao-reservas.html</loc>
+    <loc>https://yossimisolutions.vercel.app/automacao-reservas.html</loc>
     <lastmod>2026-09-28</lastmod>
   </url>
 </urlset>

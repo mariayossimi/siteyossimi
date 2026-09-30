@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://siteyossimi.vercel.app/sitemap.xml
+Sitemap: https://yossimisolutions.vercel.app/sitemap.xml
