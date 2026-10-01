@@ -16,10 +16,30 @@
   </url>
   <url>
     <loc>https://yossimisolutions.vercel.app/automacoes.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/automacoes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/automacoes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/automacoes.html"/>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://yossimisolutions.vercel.app/automacao-reservas.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/automacao-reservas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/automacao-reservas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/automacao-reservas.html"/>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://yossimisolutions.vercel.app/en/automacoes.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/automacoes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/automacoes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/automacoes.html"/>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://yossimisolutions.vercel.app/en/automacao-reservas.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://yossimisolutions.vercel.app/automacao-reservas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yossimisolutions.vercel.app/en/automacao-reservas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yossimisolutions.vercel.app/automacao-reservas.html"/>
+    <lastmod>2026-10-01</lastmod>
   </url>
 </urlset>
