@@ -131,6 +131,18 @@ button:focus-visible {
 
 .header__cta { padding: 0.6rem 1.4rem; font-size: 0.9rem; }
 
+.lang-switch {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.lang-switch:hover { color: var(--text); border-color: var(--teal); }
+
 /* ===== Header ===== */
 .header {
   position: fixed;
